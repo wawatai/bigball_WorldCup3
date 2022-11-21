@@ -173,7 +173,7 @@ html {
                             position: absolute;
                             left: -175px;
                             top: 24px;
-                            animation: img1 0.6s linear 0s;
+                            animation: img1 0.4s linear 0s;
                             z-index: 2;
 
                             &::before {
@@ -184,7 +184,7 @@ html {
                                 width: 100%;
                                 height: 100%;
                                 background: url('../images/img1.png') no-repeat;
-                                animation: lag 0.4s linear 0s,img2 0.6s linear 0.4s;
+                                animation: lag 0.3s linear 0s,img2 0.6s linear 0.3s;
                                 opacity: 0;
                             }
                         }
