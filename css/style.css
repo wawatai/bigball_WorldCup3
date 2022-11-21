@@ -101,13 +101,13 @@ html body main article section {
   position: relative;
 }
 html body main article section.right .logo {
-  width: 417px;
-  height: 202px;
+  width: 540px;
+  height: 122px;
   background: url("../images/logo.png") no-repeat;
   background-size: 100%;
   position: absolute;
-  left: 70px;
-  top: 30px;
+  left: 2px;
+  top: 114px;
   z-index: 10;
 }
 html body main article section.right .inputbox {
@@ -138,7 +138,7 @@ html body main article section.right .inputbox .box label:last-child {
 html body main article section.right .inputbox .box label p {
   color: #ffffff;
   font-size: 20px;
-  text-shadow: 1px 2px 3px #000000d7;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8431372549);
   margin-bottom: 10px;
 }
 html body main article section.right .inputbox .box label input {
@@ -158,8 +158,8 @@ html body main article section.right .inputbox button {
   background: linear-gradient(to top, #f2c640 5%, #ffdc72 19%, #ffdc72 37%, #cb8e3e 49%, #ffe79e 59%, #ffdc72 91%, #fff0aa 100%);
   border-radius: 5px;
   border: solid 1px #fffdb9;
-  -webkit-box-shadow: 0 5px 10px 0 #00000080;
-          box-shadow: 0 5px 10px 0 #00000080;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5019607843);
   color: #100700;
   font-size: 25px;
   font-weight: bold;
@@ -179,8 +179,8 @@ html body main article section.left .img1 {
   position: absolute;
   left: -175px;
   top: 24px;
-  -webkit-animation: img1 3s linear 0s;
-          animation: img1 3s linear 0s;
+  -webkit-animation: img1 0.6s linear 0s;
+          animation: img1 0.6s linear 0s;
   z-index: 2;
 }
 html body main article section.left .img1::before {
@@ -191,8 +191,8 @@ html body main article section.left .img1::before {
   width: 100%;
   height: 100%;
   background: url("../images/img1.png") no-repeat;
-  -webkit-animation: lag 2.8s linear 0s, img2 0.6s linear 2.8s;
-          animation: lag 2.8s linear 0s, img2 0.6s linear 2.8s;
+  -webkit-animation: lag 0.4s linear 0s, img2 0.6s linear 0.4s;
+          animation: lag 0.4s linear 0s, img2 0.6s linear 0.4s;
   opacity: 0;
 }
 html body .bg {
@@ -208,167 +208,27 @@ html body .bg {
 
 @-webkit-keyframes img1 {
   0% {
-    -webkit-transform: translate(-50%, -67%) scale(0.15) rotate(3600deg);
-            transform: translate(-50%, -67%) scale(0.15) rotate(3600deg);
-  }
-  10% {
-    opacity: 1;
-    -webkit-transform: translate(67%, 70%) scale(0.15) rotate(0deg);
-            transform: translate(67%, 70%) scale(0.15) rotate(0deg);
-  }
-  11% {
     opacity: 0;
-    -webkit-transform: translate(67%, 70%) scale(0.15) rotate(0deg);
-            transform: translate(67%, 70%) scale(0.15) rotate(0deg);
-  }
-  12% {
-    opacity: 0;
-    -webkit-transform: translate(175%, 0%) scale(-0.3, 0.3) rotate(0deg);
-            transform: translate(175%, 0%) scale(-0.3, 0.3) rotate(0deg);
-  }
-  20% {
-    opacity: 1;
-    -webkit-transform: translate(175%, 0%) scale(-0.3, 0.3) rotate(3600deg);
-            transform: translate(175%, 0%) scale(-0.3, 0.3) rotate(3600deg);
-  }
-  30% {
-    opacity: 1;
-    -webkit-transform: translate(-95%, 0%) scale(-0.3, 0.3) rotate(0deg);
-            transform: translate(-95%, 0%) scale(-0.3, 0.3) rotate(0deg);
-  }
-  31% {
-    opacity: 0;
-    -webkit-transform: translate(-95%, 0%) scale(-0.3, 0.3) rotate(0deg);
-            transform: translate(-95%, 0%) scale(-0.3, 0.3) rotate(0deg);
-  }
-  32% {
-    opacity: 0;
-    -webkit-transform: translate(-95%, 75%) scale(0.5) rotate(0deg);
-            transform: translate(-95%, 75%) scale(0.5) rotate(0deg);
-  }
-  40% {
-    opacity: 1;
-    -webkit-transform: translate(-95%, 75%) scale(0.5) rotate(3600deg);
-            transform: translate(-95%, 75%) scale(0.5) rotate(3600deg);
-  }
-  50% {
-    opacity: 1;
-    -webkit-transform: translate(185%, -45%) scale(0.5) rotate(0deg);
-            transform: translate(185%, -45%) scale(0.5) rotate(0deg);
-  }
-  51% {
-    opacity: 0;
-    -webkit-transform: translate(185%, -45%) scale(0.5) rotate(0deg);
-            transform: translate(185%, -45%) scale(0.5) rotate(0deg);
-  }
-  52% {
-    opacity: 0;
-    -webkit-transform: translate(110%, -85%) scale(0.5) rotate(0deg);
-            transform: translate(110%, -85%) scale(0.5) rotate(0deg);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: translate(110%, -85%) scale(0.6) rotate(4320deg);
-            transform: translate(110%, -85%) scale(0.6) rotate(4320deg);
-  }
-  70% {
-    -webkit-transform: translate(80%, 34%) scale(0.7) rotate(3240deg);
-            transform: translate(80%, 34%) scale(0.7) rotate(3240deg);
-  }
-  80% {
-    -webkit-transform: translate(-60%, -30%) scale(0.8) rotate(2160deg);
-            transform: translate(-60%, -30%) scale(0.8) rotate(2160deg);
-  }
-  90% {
-    -webkit-transform: translate(-33%, 15%) scale(0.9) rotate(1080deg);
-            transform: translate(-33%, 15%) scale(0.9) rotate(1080deg);
+    -webkit-transform: translate(-50%, -50%) scale(0) rotate(-720deg);
+            transform: translate(-50%, -50%) scale(0) rotate(-720deg);
   }
   100% {
-    -webkit-transform: translate(0) scale(1) rotate(0deg);
-            transform: translate(0) scale(1) rotate(0deg);
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) scale(1) rotate(0deg);
+            transform: translate(0%, 0%) scale(1) rotate(0deg);
   }
 }
 
 @keyframes img1 {
   0% {
-    -webkit-transform: translate(-50%, -67%) scale(0.15) rotate(3600deg);
-            transform: translate(-50%, -67%) scale(0.15) rotate(3600deg);
-  }
-  10% {
-    opacity: 1;
-    -webkit-transform: translate(67%, 70%) scale(0.15) rotate(0deg);
-            transform: translate(67%, 70%) scale(0.15) rotate(0deg);
-  }
-  11% {
     opacity: 0;
-    -webkit-transform: translate(67%, 70%) scale(0.15) rotate(0deg);
-            transform: translate(67%, 70%) scale(0.15) rotate(0deg);
-  }
-  12% {
-    opacity: 0;
-    -webkit-transform: translate(175%, 0%) scale(-0.3, 0.3) rotate(0deg);
-            transform: translate(175%, 0%) scale(-0.3, 0.3) rotate(0deg);
-  }
-  20% {
-    opacity: 1;
-    -webkit-transform: translate(175%, 0%) scale(-0.3, 0.3) rotate(3600deg);
-            transform: translate(175%, 0%) scale(-0.3, 0.3) rotate(3600deg);
-  }
-  30% {
-    opacity: 1;
-    -webkit-transform: translate(-95%, 0%) scale(-0.3, 0.3) rotate(0deg);
-            transform: translate(-95%, 0%) scale(-0.3, 0.3) rotate(0deg);
-  }
-  31% {
-    opacity: 0;
-    -webkit-transform: translate(-95%, 0%) scale(-0.3, 0.3) rotate(0deg);
-            transform: translate(-95%, 0%) scale(-0.3, 0.3) rotate(0deg);
-  }
-  32% {
-    opacity: 0;
-    -webkit-transform: translate(-95%, 75%) scale(0.5) rotate(0deg);
-            transform: translate(-95%, 75%) scale(0.5) rotate(0deg);
-  }
-  40% {
-    opacity: 1;
-    -webkit-transform: translate(-95%, 75%) scale(0.5) rotate(3600deg);
-            transform: translate(-95%, 75%) scale(0.5) rotate(3600deg);
-  }
-  50% {
-    opacity: 1;
-    -webkit-transform: translate(185%, -45%) scale(0.5) rotate(0deg);
-            transform: translate(185%, -45%) scale(0.5) rotate(0deg);
-  }
-  51% {
-    opacity: 0;
-    -webkit-transform: translate(185%, -45%) scale(0.5) rotate(0deg);
-            transform: translate(185%, -45%) scale(0.5) rotate(0deg);
-  }
-  52% {
-    opacity: 0;
-    -webkit-transform: translate(110%, -85%) scale(0.5) rotate(0deg);
-            transform: translate(110%, -85%) scale(0.5) rotate(0deg);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: translate(110%, -85%) scale(0.6) rotate(4320deg);
-            transform: translate(110%, -85%) scale(0.6) rotate(4320deg);
-  }
-  70% {
-    -webkit-transform: translate(80%, 34%) scale(0.7) rotate(3240deg);
-            transform: translate(80%, 34%) scale(0.7) rotate(3240deg);
-  }
-  80% {
-    -webkit-transform: translate(-60%, -30%) scale(0.8) rotate(2160deg);
-            transform: translate(-60%, -30%) scale(0.8) rotate(2160deg);
-  }
-  90% {
-    -webkit-transform: translate(-33%, 15%) scale(0.9) rotate(1080deg);
-            transform: translate(-33%, 15%) scale(0.9) rotate(1080deg);
+    -webkit-transform: translate(-50%, -50%) scale(0) rotate(-720deg);
+            transform: translate(-50%, -50%) scale(0) rotate(-720deg);
   }
   100% {
-    -webkit-transform: translate(0) scale(1) rotate(0deg);
-            transform: translate(0) scale(1) rotate(0deg);
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) scale(1) rotate(0deg);
+            transform: translate(0%, 0%) scale(1) rotate(0deg);
   }
 }
 @-webkit-keyframes img2 {
