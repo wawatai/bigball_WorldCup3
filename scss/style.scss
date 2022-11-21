@@ -173,7 +173,7 @@ html {
                             position: absolute;
                             left: -175px;
                             top: 24px;
-                            animation: img1 0.8s ease-out 0s;
+                            animation: img1 1s ease-out 0s;
                             transform-origin: bottom;
                             z-index: 2;
 
@@ -293,16 +293,16 @@ html {
         transform: scale(0);
     }
 
-    25% {
-        transform: scale(0.8,1.3);
+    17% {
+        transform: scale(1.1);
     }
 
-    50% {
-        transform: scale(1.4,0.7);
+    35% {
+        transform: scale(0.7);
     }
 
-    75% {
-        transform: scale(0.9,1.1);
+    60% {
+        transform: scale(1.2);
     }
 
     100% {
